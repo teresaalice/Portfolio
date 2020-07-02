@@ -5,9 +5,9 @@ class SocialProfile extends Component {
   render() {
     const { title, link, image } = this.props.socialProfile;
     return (
-      <div style={{ display: "inline", width: 36, height: 36, margin: 8 }}>
-        <a href={link}><img src={image} alt={title} /></a>
-      </div>
+      <span>
+        <a href={link}><img src={image} alt={title} style={{ width: 35, height: 35, margin: 10 }} /></a>
+      </span>
     );
   }
 }
