@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import SOCIAL_PROFILES from "./data/socialprofiles";
+import SOCIAL_PROFILES from "./data/socialProfiles";
 
 class SocialProfile extends Component {
   render() {
-    const { title, image, link } = this.props.socialProfile;
+    const { title, link, image } = this.props.socialProfile;
     return (
       <div style={{ display: "inline", width: 36, height: 36, margin: 8 }}>
         <a href={link}><img src={image} alt={title} /></a>
