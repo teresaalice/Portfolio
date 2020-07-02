@@ -2,7 +2,7 @@ import github_icon from "../assets/github_icon.png";
 import linkedin_icon from "../assets/linkedin_icon.png";
 import email_icon from "../assets/email_icon.png";
 
-const SOCIALPROFILES = [
+const SOCIAL_PROFILES = [
     {
       id: 1,
       title: "GitHub",
@@ -23,4 +23,4 @@ const SOCIALPROFILES = [
     },
   ];
   
-  export default SOCIALPROFILES;
+  export default SOCIAL_PROFILES;

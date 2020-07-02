@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import SOCIALPROFILES from "./data/socialprofiles";
+import SOCIAL_PROFILES from "./data/socialprofiles";
 
 class SocialProfile extends Component {
   render() {
-    const { title, image, link } = this.props.socialprofile;
+    const { title, image, link } = this.props.socialProfile;
     return (
       <div style={{ display: "inline", width: 36, height: 36, margin: 8 }}>
         <a href={link}><img src={image} alt={title} /></a>
@@ -18,8 +18,8 @@ class SocialProfiles extends Component {
       <div>
         <h4>Reach out</h4>
         <div>
-          {SOCIALPROFILES.map((SOCIALPROFILE) => {
-            return <SocialProfile key={SOCIALPROFILE.id} socialprofile={SOCIALPROFILE} />;
+          {SOCIAL_PROFILES.map((SOCIAL_PROFILE) => {
+            return <SocialProfile key={SOCIAL_PROFILE.id} socialProfile={SOCIAL_PROFILE} />;
           })}
         </div>
       </div>
