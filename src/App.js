@@ -8,7 +8,6 @@ class App extends Component {
   state = { displayBio: false };
 
   toggleDisplayBio = () => {
-    console.log("toggleDisplayBio this", this);
     this.setState({ displayBio: !this.state.displayBio });
   };
 
